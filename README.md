@@ -31,7 +31,9 @@ Select **Generate new token** to create a new PAT. Check the `write:packages` pe
 Copy this token and save it somewhere. You will recieve this token from GitHub only once; if forgotten you will need to deactivate it, so keep it safe!
 
 ## 2. Add the workflow files to your repository
-Copy the contents of the .github folder to your repository. Specifically, you want to make sure that the `maven-publish.yml` workflow YAML file is in your repository in the `workflows` folder.
+Copy the contents of the .github folder to your repository. Specifically, you want to make sure that the [`maven-publish.yml`](https://github.com/AtaraxiaMC/GHPackages-Demo/blob/main/.github/workflows/maven-publish.yml) workflow YAML file is in your repository in the `workflows` folder.
+
+Take care to modify the `java-version` property in this file to the version of the Java Development Kit (JDK) you wish to use.
 
 ## 3a. Modify your parent `pom.xml` (multi-module projects only!)
 *(skip this step if your project only contains a singular `pom.xml` file)*
