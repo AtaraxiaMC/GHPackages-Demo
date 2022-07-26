@@ -139,3 +139,12 @@ Error 409 indicates a package with the same version exists. You may need to dele
 Ensure your artifact is completely lowercase. If it is, try adding additional characters to the name of your artifact (in turn, changing the artifact name and thus the dependency in any dependent `pom.xml` files!).
 
 Another reason this may occur is that your package is uploaded in another repository somewhere (identical `groupId` and `artifactId`. GitHub will prevent you from uploading the package if this is the case. Attempt to find and delete these offending packages.
+
+## Sources
+* https://github.com/apigee/apigee-deploy-maven-plugin/issues/52
+* https://github.community/t/maven-deploy-fails-with-status-422-unprocessable-entity/253074
+* https://stackoverflow.com/a/64363671
+* https://docs.github.com/en/actions/publishing-packages/publishing-java-packages-with-maven#publishing-packages-to-github-packages
+* https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#triggering-new-workflows-using-a-personal-access-token
+* https://github.community/t/actions-not-triggered-on-release/17944/12
+* https://github.com/actions/setup-java/blob/main/docs/advanced-usage.md#apache-maven-with-a-settings-path
